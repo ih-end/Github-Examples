@@ -1,0 +1,12 @@
+name: Schedule
+
+on:
+  schedule:
+    - cron '*/30 * * * *'
+
+jobs:
+  name_of_job_is_here:
+    runs_on: ubuntu_latest
+    steps:
+      - name: Echo something
+        run: echo "The current date is $(date)"
