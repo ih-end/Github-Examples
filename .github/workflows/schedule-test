@@ -2,7 +2,7 @@ name: Schedule
 
 on:
   schedule:
-    - cron '*/30 * * * *'
+    - cron '*/2 * * * *'
 
 jobs:
   name_of_job_is_here:
