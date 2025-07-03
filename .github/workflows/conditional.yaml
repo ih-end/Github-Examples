@@ -3,15 +3,12 @@ on: [push]
 
 jobs:
   hello-world:
-    if: github.repository == 'ih-end/Github-Examples'
     runs-on: ubuntu-latest
     steps:
       - name: "Hello world"
+        if: github.repository == 'ih-end/Github-Examples'
         run: echo "Hello W"
 
-  bye-world:
-    if: ${{ github.repository != 'ih-end/Github-Examples' }}
-    runs-on: ubuntu-latest
-    steps:
       - name: "Bye"
+        if: github.repository != 'ih-end/Github-Examples'
         run: echo "Bye W"
