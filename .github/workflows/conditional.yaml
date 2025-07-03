@@ -1,0 +1,13 @@
+name: example-conditional
+on: [push]
+jobs:
+  hello-world:
+  if: github.repository == "ih-end/Github-Examples"
+  runs-on: ubuntu-latest
+  steps:
+    - name: "Hello world"
+      run: echo "Hello W"
+  if: ${{ github.repository != "ih-end/Github-Examples"}}
+  steps:
+    - name: byebye
+      run: echo "Bye b"
