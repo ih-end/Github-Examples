@@ -7,7 +7,7 @@ jobs:
   steps:
     - name: "Hello world"
       run: echo "Hello W"
-  if: ${{ ! github.repository == "ih-end/Github-Examples"}}
+  if: ${{ ! github.repository == "ih-end/Github-Examples" }}
   steps:
     - name: byebye
       run: echo "Bye b"
